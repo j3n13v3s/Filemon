@@ -110,12 +110,12 @@ const levels = [
 // --- Sound Manager (Local Media) ---
 const SoundManager = {
     sounds: {
-        startApp: new Audio('media/Inicio de la app.mp3'),
-        newQuestion: new Audio('media/Inicio de Pregunta.mp3'),
-        correct: new Audio('media/Respuesta correcta.mp3'),
-        wrong: new Audio('media/Respuesta incorrecta.mp3'),
-        suspense: new Audio('media/Mientras contesta.mp3'),
-        lifeline: new Audio('media/al utilizar un comodin.mp3')
+        startApp: new Audio('media/Inicio%20de%20la%20app.mp3'),
+        newQuestion: new Audio('media/Inicio%20de%20Pregunta.mp3'),
+        correct: new Audio('media/Respuesta%20correcta.mp3'),
+        wrong: new Audio('media/Respuesta%20incorrecta.mp3'),
+        suspense: new Audio('media/Mientras%20contesta.mp3'),
+        lifeline: new Audio('media/al%20utilizar%20un%20comodin.mp3')
     },
 
     init() {
