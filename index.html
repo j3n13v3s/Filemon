@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quién Quiere Tener la Mejor Inducción?</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Start Screen -->
+        <section id="start-screen" class="screen active">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo de Inducción" id="app-logo">
+                </div>
+            </div>
+            <h1>¿Quién Quiere Tener la Mejor Inducción?</h1>
+            <p>Demuestra tus conocimientos y conviértete en un experto.</p>
+            <button id="start-btn" class="main-btn">Comenzar Desafío</button>
+        </section>
+
+        <!-- Game Screen -->
+        <section id="game-screen" class="screen">
+            <div class="top-bar">
+                <div class="lifelines">
+                    <button id="lifeline-5050" class="lifeline-btn" title="50/50">50:50</button>
+                    <button id="lifeline-people" class="lifeline-btn" title="Voto del Público">👥</button>
+                    <button id="lifeline-phone" class="lifeline-btn" title="Llamar a un Amigo">📞</button>
+                </div>
+                <div class="score-display">Nivel: <span id="current-level">1</span>/10</div>
+            </div>
+
+            <div class="main-layout">
+                <div class="question-area">
+                    <div class="question-box">
+                        <p id="question-text">Cargando pregunta...</p>
+                    </div>
+                    <div class="options-grid">
+                        <button class="option-btn" data-option="A"><span class="label">A:</span> <span class="text">Opción A</span></button>
+                        <button class="option-btn" data-option="B"><span class="label">B:</span> <span class="text">Opción B</span></button>
+                        <button class="option-btn" data-option="C"><span class="label">C:</span> <span class="text">Opción C</span></button>
+                        <button class="option-btn" data-option="D"><span class="label">D:</span> <span class="text">Opción D</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Result Screen -->
+        <section id="result-screen" class="screen">
+            <div id="result-content">
+                <h2 id="result-title">¡Juego Terminado!</h2>
+                <p id="result-message"></p>
+                <div class="final-score">Nivel Alcanzado: <span id="final-level">0</span></div>
+                <button id="restart-btn" class="main-btn">Intentar de Nuevo</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modals for Lifelines -->
+    <div id="lifeline-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer class="copyright">
+        &copy; 2025 Filemon Espinosa Rodriguez &mdash; Todos los derechos reservados
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
